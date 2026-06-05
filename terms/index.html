@@ -250,7 +250,7 @@ th { background: #f0f0f0; font-weight: 700; }
 <script>(function () {
   var LANGS = ['es','en','fr','it','de'];
   function show(l) {
-    var docs = document.querySelectorAll('[data-lang]');
+    var docs = document.querySelectorAll('section[data-lang]');
     for (var i = 0; i < docs.length; i++) docs[i].hidden = docs[i].getAttribute('data-lang') !== l;
     var btns = document.querySelectorAll('.lang-btn');
     for (var j = 0; j < btns.length; j++) btns[j].classList.toggle('active', btns[j].getAttribute('data-lang') === l);
